@@ -62,6 +62,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+            "port":4202
+          },
           "configurations": {
             "production": {
               "browserTarget": "RpgPlaceFrontendPessoas:build:production"
@@ -97,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c748b11e-c2ec-476c-879f-243bb0ec70b3"
   }
 }
