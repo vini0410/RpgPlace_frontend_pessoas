@@ -4,10 +4,12 @@ const {
 } = require("@angular-architects/module-federation/webpack");
 
 module.exports = withModuleFederationPlugin({
-  name: "RpgPlace_frontend_pessoas",
+  name: "pessoas",
 
   exposes: {
-    "./Component": "./src/app/app.component.ts",
+    "./login": "./src/app/login/login.component.ts",
+    "./register": "./src/app/register/register.component.ts",
+    // "./routes": "./src/app/pessoas/pessoas-routes.ts"
   },
 
   shared: {

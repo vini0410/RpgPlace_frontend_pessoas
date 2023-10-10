@@ -1,0 +1,45 @@
+<div class="login-space">
+  <mat-card class="login">
+    <mat-card-title class="title">Login</mat-card-title>
+    <form>
+      <mat-form-field
+        [hideRequiredMarker]="true"
+        floatLabel="always"
+        color="primary"
+      >
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          required
+          type="email"
+          name="email"
+          [(ngModel)]="email"
+        />
+      </mat-form-field>
+      <mat-form-field
+        [hideRequiredMarker]="true"
+        floatLabel="always"
+        color="primary"
+      >
+        <mat-label>Senha</mat-label>
+        <input
+          matInput
+          required
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+        />
+      </mat-form-field>
+      <div class="button-area">
+        <button
+          mat-raised-button
+          color="primary"
+          class="loginButton"
+          (click)="login()"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+  </mat-card>
+</div>

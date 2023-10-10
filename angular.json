@@ -15,6 +15,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
+					// "builder": "@angular-devkit/build-angular:browser",
 					"builder": "ngx-build-plus:browser",
 					"options": {
 						"outputPath": "dist/rpg-place-frontend-pessoas",
@@ -30,8 +31,9 @@
 							"src/assets"
 						],
 						"styles": [
-							"src/styles.scss"
-						],
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "src/styles.scss"
+            ],
 						"scripts": [],
 						"extraWebpackConfig": "webpack.config.js",
 						"commonChunk": false
@@ -65,6 +67,7 @@
 					"defaultConfiguration": "production"
 				},
 				"serve": {
+					// "builder": "@angular-devkit/build-angular:browser",
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
@@ -77,12 +80,13 @@
 					},
 					"defaultConfiguration": "development",
 					"options": {
-						"port": 4202,
-						"publicHost": "http://localhost:4202",
+						"port": 8091,
+						"publicHost": "http://localhost:8091",
 						"extraWebpackConfig": "webpack.config.js"
 					}
 				},
 				"extract-i18n": {
+					// "builder": "@angular-devkit/build-angular:extract-i18n",
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
 						"browserTarget": "RpgPlace_frontend_pessoas:build",
@@ -103,8 +107,9 @@
 							"src/assets"
 						],
 						"styles": [
-							"src/styles.scss"
-						],
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "src/styles.scss"
+            ],
 						"scripts": []
 					}
 				}
